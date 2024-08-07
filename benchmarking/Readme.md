@@ -1,20 +1,20 @@
 # Walkthrough with example data
-0. ## Prepare count data with only highly variable genes
+## Prepare count data with only highly variable genes
    ```
    python benchmarking/subset_hvg.py --counts "simulated_data/counts.npz" --num_highvar_genes 2000
    ```
-1. ## Run CSI-GEP from start to finish
+## Run CSI-GEP from start to finish
    ```bsub < CSI-GEP/csigep_submit.bsub # rescue step is disabled for the complexity of the dataset
    ```
    CSI-GEP automatically determines 41 GEPs at JL = 20 & k = 47
 
-2. ## Run SA-GPU
+## Run SA-GPU
    ```
    python benchmarking/sa_gpu/cmd_SA_GPU.py
    ```
    SA-GPU automatically picks k = 50
 
-3. ## Run ScVI
+## Run ScVI
    ```
    python benchmarking/scvi/cmd_scvi.py # comment out lines 17 & 18, uncomment line 12
    ```
@@ -23,7 +23,7 @@
    python benchmarking/scvi/cmd_scvi.py # uncomment lines 17 & 18, comment out line 12
    ```
 
-4. ## Run iNMF
+## Run iNMF
    ```
    bsub < benchmarking/inmf/suggestK.bsub
    Rscript becnmarking/inmf/elbow.R # k = 60
@@ -32,7 +32,7 @@
    ```
    bsub < benchmarking/inmf/inmf.bsub
    ```
-5. ## Summary
+## Summary
    1. ### Heatmaps
    2. ### Customized metrics
    3. ### Simplified silhouette score
