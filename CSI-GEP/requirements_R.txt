@@ -1,0 +1,9 @@
+doParallel_1.0.17 
+iterators_1.0.14  
+foreach_1.5.2     
+ggplot2_3.5.1    
+elbow_0.0.0.9000  
+vroom_1.6.4       
+igraph_1.5.1      
+dplyr_1.1.4      
+jaccard_0.1.0   
