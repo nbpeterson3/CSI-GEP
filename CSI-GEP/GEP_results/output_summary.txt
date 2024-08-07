@@ -1,0 +1,6 @@
+Community_Number: 41
+Rank: 47
+Jaccard_Length: 20
+Rescued more programs: FALSE
+Automatically selected rank k = 47
+CSIGEP finished!
