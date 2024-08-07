@@ -4,7 +4,8 @@
    python benchmarking/subset_hvg.py --counts "simulated_data/counts.npz" --num_highvar_genes 2000
    ```
 ## Run CSI-GEP from start to finish
-   ```bsub < CSI-GEP/csigep_submit.bsub # rescue step is disabled for the complexity of the dataset
+   ```
+   bsub < CSI-GEP/csigep_submit.bsub # rescue step is disabled for the complexity of the dataset
    ```
    CSI-GEP automatically determines 41 GEPs at JL = 20 & k = 47
 
