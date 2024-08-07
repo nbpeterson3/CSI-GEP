@@ -114,6 +114,8 @@ df_kl <- data.frame(median_kl = c(mean_kls, log2(k.test)), k = c(k.test, k.test)
                     calc = c(rep('KL_div', length(k.test)), rep('log2(k)', length(k.test))))
 
 print(df_kl)
+write.csv(df_kl[df_kl$calc == "KL_div",], "benchmarking/inmf/output/median_kl.csv")
+
 p1 <- ggplot(df_kl, aes_string(x = 'k', y = 'median_kl', col = 'calc')) + geom_line(size=1) +
     geom_point() +
     theme_classic() + labs(y='Median KL divergence (across all cells)', x = 'K') +
