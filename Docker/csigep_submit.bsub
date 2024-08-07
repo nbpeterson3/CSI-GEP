@@ -1,0 +1,38 @@
+#!/bin/bash
+#BSUB -J csigep_submit
+#BSUB -eo Docker/csigep_err.txt
+#BSUB -oo Docker/csigep_out.txt
+#BSUB -q standard
+#BSUB -R "rusage[mem=100MB]"
+
+output_dir=$PWD"/Docker/output/"
+jaccard_dir=$output_dir"/results/"
+GEP_dir=$output_dir"/GEP_results/"
+log_dir=$PWD"/Docker/logfile/"
+mkdir -p $GEP_dir
+mkdir -p $jaccard_dir
+mkdir -p $log_dir
+dataset_name="Splatter_250k"
+K_list=$(<$PWD"/CSI-GEP/K.txt")
+data_directory=$PWD"/simulated_data/counts.h5ad"
+rescue=FALSE # set to TRUE if you want to rescue more GEPs from unused columns
+
+CMD1="singularity exec docker://svlprhpcreg01.stjude.org/hpcf/csi-gep_py:latest python /app/prepare.py  --numgenes 2000 -c $data_directory --output-dir $output_dir" 
+bsub -K -n 1 -e $log_dir/docker_err.txt -o $log_dir/docker_out.txt -J prepare -q standard -R "rusage[mem=100GB]" $CMD1
+
+for ind in $K_list; 
+do
+    CMD2="singularity exec --nv docker://svlprhpcreg01.stjude.org/hpcf/csi-gep_py:latest python /app/cNMF.py  --output-dir $output_dir --components $ind --n-iter 100"
+    bsub  -n 1 -e $log_dir/NMF_err_$ind.txt -o $log_dir/NMF_out_$ind.txt  -J factorize_$ind -q gpu -gpu "num=1/host" -R "rusage[mem=100GB]" $CMD2
+done
+bwait -w 'ended(factorize_*)'
+
+for k in $K_list; 
+do
+	CMD3="singularity exec docker://svlprhpcreg01.stjude.org/hpcf/csi-gep_r:latest Rscript --vanilla /app/Jaccard.R $k $output_dir"
+	bsub  -n 8 -e $log_dir/Jaccard_err_$k.txt -o $log_dir/Jaccard_out_$k.txt -J Jaccard_batch -q large_mem -R "rusage[mem=100GB]" $CMD3 
+done
+bwait -w 'ended(Jaccard_batch)'
+
+CMD4="singularity exec docker://svlprhpcreg01.stjude.org/hpcf/csi-gep_r:latest Rscript --vanilla /app/GEP_analysis.R $output_dir $dataset_name $GEP_dir ${K_list//$'\n'/,} $rescue"
+bsub -n 1 -e $log_dir/docker_err.txt -o $log_dir/docker_out.txt -J GEP_analysis -q standard -R "rusage[mem=100GB]" $CMD4
