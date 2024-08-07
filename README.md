@@ -3,7 +3,7 @@ Consensus and Scalable Interpretations of Gene Expression Programs in Single Cel
 
 ## Benchmarking 
 We show a complete example of benchmarking analysis on a simulated dataset with 250,000 cells and 25,000 genes. The simulated data is stored at simulated_data/.\
-<Insert figure here>
+Insert figure here
 Details can be found in Readme.md at Benchmarking/.
 
 
