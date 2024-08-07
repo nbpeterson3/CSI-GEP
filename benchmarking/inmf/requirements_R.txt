@@ -1,0 +1,15 @@
+reticulate_1.25   
+data.table_1.14.8 
+rliger_1.0.0      
+patchwork_1.1.2  
+Matrix_1.5-3      
+cowplot_1.1.1
+ggplot2_3.4.2
+doParallel_1.0.17
+iterators_1.0.14
+foreach_1.5.2
+elbow_0.0.0.9000
+vroom_1.6.1
+igraph_1.4.2
+dplyr_1.1.1
+jaccard_0.1.0
