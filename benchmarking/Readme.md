@@ -3,6 +3,8 @@
    ```
    python benchmarking/subset_hvg.py --counts "simulated_data/counts.npz" --num_highvar_genes 2000
    ```
+   Resulting file can be found on [Open Science Framework](https://osf.io/tknm2/).
+   
 ## Run CSI-GEP from start to finish
    ```
    bsub < CSI-GEP/csigep_submit.bsub # rescue step is disabled for the complexity of the dataset
