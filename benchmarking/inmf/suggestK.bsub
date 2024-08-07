@@ -1,0 +1,9 @@
+#!/bin/bash
+
+#BSUB -P XL
+#BSUB -R "rusage[mem=2000GB]" 
+#BSUB -q large_mem
+#BSUB -J inmf
+
+R CMD BATCH benchmarking/inmf/inmf_suggestK.R 
+

@@ -1,0 +1,9 @@
+#!/bin/bash
+
+#BSUB -P XL
+#BSUB -R "rusage[mem=100GB]" 
+#BSUB -q standard
+#BSUB -J inmf
+
+R CMD BATCH benchmarking/inmf/inmf_run.R 
+
