@@ -1,4 +1,4 @@
-# Walkthrough with example data
+# Walkthrough with example data (dependencies of each method is provided in the seperate requirements.txt files)
 ## Prepare count data with only highly variable genes
    ```
    python benchmarking/subset_hvg.py --counts "simulated_data/counts.npz" --num_highvar_genes 2000
