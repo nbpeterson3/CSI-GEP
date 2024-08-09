@@ -1,0 +1,112 @@
+Reading data frame from benchmarking/filtered_counts_2000.npz
+NMF class initalized.
+True
+NMF data and parameters set.
+   * Using GPU: cuda:0
+%%%%%%%%%%%%%%%
+a = 10.0
+b = 0.00012635618544081951
+%%%%%%%%%%%%%%%
+nit=    0 K=  100 | obj=331208192.00	b_div=366765184.00	lam=8.93	del=1.00000000	sumW=2240829.00	sumH=9133.42
+nit=  100 K=   55 | obj=-59855776.00	b_div=201007552.00	lam=3.01	del=0.03530739	sumW=487824.78	sumH=24353.59
+nit=  200 K=   52 | obj=-73951200.00	b_div=199829760.00	lam=3.13	del=0.00507405	sumW=516440.50	sumH=22838.50
+nit=  300 K=   52 | obj=-74519808.00	b_div=199045936.00	lam=3.21	del=0.00217174	sumW=533271.75	sumH=22599.60
+nit=  400 K=   51 | obj=-78740784.00	b_div=198960256.00	lam=3.25	del=0.00083109	sumW=542099.75	sumH=22130.67
+nit=  500 K=   51 | obj=-78883040.00	b_div=198745088.00	lam=3.28	del=0.00045180	sumW=546806.88	sumH=22072.50
+nit=  600 K=   51 | obj=-78958112.00	b_div=198641920.00	lam=3.29	del=0.00089598	sumW=549641.62	sumH=22040.39
+nit=  700 K=   51 | obj=-78998656.00	b_div=198592096.00	lam=3.30	del=0.00146347	sumW=551430.50	sumH=22013.26
+nit=  800 K=   51 | obj=-79075504.00	b_div=198762896.00	lam=3.30	del=0.13537522	sumW=552372.19	sumH=21910.28
+nit=  900 K=   50 | obj=-82957040.00	b_div=198861664.00	lam=3.30	del=0.00012550	sumW=552210.88	sumH=21655.33
+nit= 1000 K=   50 | obj=-82968544.00	b_div=198833920.00	lam=3.31	del=0.00009547	sumW=553018.19	sumH=21633.21
+nit= 1100 K=   50 | obj=-82976352.00	b_div=198812624.00	lam=3.31	del=0.00008447	sumW=553749.62	sumH=21614.47
+nit= 1200 K=   50 | obj=-82981904.00	b_div=198795888.00	lam=3.31	del=0.00006816	sumW=554358.19	sumH=21597.88
+nit= 1300 K=   50 | obj=-82986032.00	b_div=198782720.00	lam=3.32	del=0.00006223	sumW=554863.94	sumH=21582.79
+nit= 1400 K=   50 | obj=-82989344.00	b_div=198772096.00	lam=3.32	del=0.00005656	sumW=555276.75	sumH=21568.89
+nit= 1500 K=   50 | obj=-82992576.00	b_div=198763600.00	lam=3.32	del=0.00009635	sumW=555592.75	sumH=21556.27
+nit= 1600 K=   50 | obj=-83073600.00	b_div=198701600.00	lam=3.32	del=0.00102994	sumW=555223.62	sumH=21563.66
+nit= 1700 K=   50 | obj=-83128400.00	b_div=198671248.00	lam=3.31	del=0.00068253	sumW=554091.38	sumH=21580.96
+nit= 1800 K=   50 | obj=-83146176.00	b_div=198670160.00	lam=3.31	del=0.00049290	sumW=553385.62	sumH=21597.69
+nit= 1900 K=   50 | obj=-83152992.00	b_div=198673248.00	lam=3.30	del=0.00039155	sumW=553007.31	sumH=21610.41
+nit= 2000 K=   50 | obj=-83157792.00	b_div=198676432.00	lam=3.30	del=0.00038760	sumW=552755.75	sumH=21621.12
+nit= 2100 K=   50 | obj=-83161328.00	b_div=198681136.00	lam=3.30	del=0.00044827	sumW=552518.56	sumH=21632.94
+nit= 2200 K=   50 | obj=-83164464.00	b_div=198688400.00	lam=3.30	del=0.00058223	sumW=552230.50	sumH=21648.34
+nit= 2300 K=   50 | obj=-83167728.00	b_div=198700480.00	lam=3.30	del=0.00089454	sumW=551827.50	sumH=21670.98
+nit= 2400 K=   50 | obj=-83172528.00	b_div=198725088.00	lam=3.29	del=0.00204262	sumW=551170.62	sumH=21712.08
+nit= 2500 K=   50 | obj=-83221424.00	b_div=198815584.00	lam=3.28	del=0.01466005	sumW=549327.31	sumH=21869.87
+nit= 2600 K=   50 | obj=-83284592.00	b_div=198879424.00	lam=3.27	del=0.00099901	sumW=547133.75	sumH=21947.62
+nit= 2700 K=   50 | obj=-83289984.00	b_div=198883664.00	lam=3.27	del=0.00002192	sumW=546797.88	sumH=21921.86
+nit= 2800 K=   50 | obj=-83294080.00	b_div=198877664.00	lam=3.27	del=0.00011746	sumW=546735.25	sumH=21907.21
+nit= 2900 K=   50 | obj=-83299104.00	b_div=198871232.00	lam=3.27	del=0.00005212	sumW=546707.81	sumH=21895.78
+nit= 3000 K=   50 | obj=-83303408.00	b_div=198866288.00	lam=3.27	del=0.00004192	sumW=546704.62	sumH=21887.42
+nit= 3100 K=   50 | obj=-83305312.00	b_div=198864368.00	lam=3.27	del=0.00002557	sumW=546704.75	sumH=21881.15
+nit= 3200 K=   50 | obj=-83306272.00	b_div=198863744.00	lam=3.27	del=0.00002202	sumW=546692.19	sumH=21875.08
+nit= 3300 K=   50 | obj=-83307136.00	b_div=198863168.00	lam=3.27	del=0.00001388	sumW=546681.00	sumH=21869.27
+nit= 3400 K=   50 | obj=-83307744.00	b_div=198862688.00	lam=3.27	del=0.00001131	sumW=546680.12	sumH=21863.98
+nit= 3500 K=   50 | obj=-83308336.00	b_div=198862080.00	lam=3.27	del=0.00000732	sumW=546686.56	sumH=21859.08
+nit= 3600 K=   50 | obj=-83308848.00	b_div=198861504.00	lam=3.27	del=0.00000717	sumW=546702.69	sumH=21854.22
+nit= 3700 K=   50 | obj=-83309328.00	b_div=198860960.00	lam=3.27	del=0.00000504	sumW=546717.50	sumH=21849.86
+nit= 3800 K=   50 | obj=-83309744.00	b_div=198860496.00	lam=3.27	del=0.00000418	sumW=546730.44	sumH=21846.39
+nit= 3900 K=   50 | obj=-83310112.00	b_div=198859984.00	lam=3.27	del=0.00000379	sumW=546747.38	sumH=21843.40
+nit= 4000 K=   50 | obj=-83310400.00	b_div=198859584.00	lam=3.27	del=0.00000385	sumW=546763.69	sumH=21840.62
+nit= 4100 K=   50 | obj=-83310656.00	b_div=198859136.00	lam=3.27	del=0.00000563	sumW=546779.12	sumH=21838.09
+nit= 4200 K=   50 | obj=-83310912.00	b_div=198858656.00	lam=3.27	del=0.00000481	sumW=546799.31	sumH=21835.70
+nit= 4300 K=   50 | obj=-83311104.00	b_div=198858160.00	lam=3.27	del=0.00000474	sumW=546819.38	sumH=21833.63
+nit= 4400 K=   50 | obj=-83311312.00	b_div=198857632.00	lam=3.27	del=0.00000554	sumW=546841.38	sumH=21831.65
+nit= 4500 K=   50 | obj=-83311472.00	b_div=198857152.00	lam=3.27	del=0.00000576	sumW=546864.88	sumH=21829.68
+nit= 4600 K=   50 | obj=-83311632.00	b_div=198856640.00	lam=3.27	del=0.00000710	sumW=546889.12	sumH=21827.84
+nit= 4700 K=   50 | obj=-83311744.00	b_div=198856224.00	lam=3.27	del=0.00000652	sumW=546913.62	sumH=21826.20
+nit= 4800 K=   50 | obj=-83311856.00	b_div=198855792.00	lam=3.27	del=0.00000671	sumW=546936.38	sumH=21824.66
+nit= 4900 K=   50 | obj=-83311968.00	b_div=198855328.00	lam=3.27	del=0.00000818	sumW=546961.12	sumH=21823.25
+nit= 5000 K=   50 | obj=-83312080.00	b_div=198854864.00	lam=3.27	del=0.00000823	sumW=546986.31	sumH=21822.03
+nit= 5100 K=   50 | obj=-83312192.00	b_div=198854416.00	lam=3.27	del=0.00000874	sumW=547009.50	sumH=21820.95
+nit= 5200 K=   50 | obj=-83312304.00	b_div=198853888.00	lam=3.27	del=0.00000930	sumW=547036.00	sumH=21819.89
+nit= 5300 K=   50 | obj=-83312400.00	b_div=198853376.00	lam=3.27	del=0.00001050	sumW=547065.12	sumH=21818.82
+nit= 5400 K=   50 | obj=-83312480.00	b_div=198852912.00	lam=3.27	del=0.00001005	sumW=547094.19	sumH=21817.78
+nit= 5500 K=   50 | obj=-83312560.00	b_div=198852480.00	lam=3.27	del=0.00001162	sumW=547122.25	sumH=21816.77
+nit= 5600 K=   50 | obj=-83312656.00	b_div=198852000.00	lam=3.27	del=0.00001205	sumW=547151.12	sumH=21815.77
+nit= 5700 K=   50 | obj=-83312720.00	b_div=198851552.00	lam=3.27	del=0.00001248	sumW=547180.75	sumH=21814.84
+nit= 5800 K=   50 | obj=-83312816.00	b_div=198851072.00	lam=3.27	del=0.00001183	sumW=547211.38	sumH=21813.93
+nit= 5900 K=   50 | obj=-83312896.00	b_div=198850624.00	lam=3.27	del=0.00000992	sumW=547238.00	sumH=21813.12
+nit= 6000 K=   50 | obj=-83312960.00	b_div=198850240.00	lam=3.27	del=0.00000802	sumW=547262.62	sumH=21812.34
+nit= 6100 K=   50 | obj=-83313008.00	b_div=198849904.00	lam=3.27	del=0.00000536	sumW=547284.12	sumH=21811.66
+nit= 6200 K=   50 | obj=-83313040.00	b_div=198849664.00	lam=3.27	del=0.00000379	sumW=547299.38	sumH=21811.11
+nit= 6300 K=   50 | obj=-83313056.00	b_div=198849472.00	lam=3.27	del=0.00000296	sumW=547312.00	sumH=21810.64
+nit= 6400 K=   50 | obj=-83313088.00	b_div=198849312.00	lam=3.27	del=0.00000185	sumW=547322.38	sumH=21810.18
+nit= 6475 K=   50 | obj=-83313120.00	b_div=198849216.00	lam=3.27	del=0.00000088	sumW=547328.19	sumH=21809.87
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@nodegpu236>
+Subject: Job 233024921: <SA_GPU> in cluster <hpcf_research_cluster> Done
+
+Job <SA_GPU> was submitted from host <noderome105> by user <xliu38> in cluster <hpcf_research_cluster> at Tue Aug  6 15:13:30 2024
+Job was executed on host(s) <nodegpu236>, in queue <gpu>, as user <xliu38> in cluster <hpcf_research_cluster> at Tue Aug  6 15:13:38 2024
+</home/xliu38> was used as the home directory.
+</home/xliu38/acNMF/Github> was used as the working directory.
+Started at Tue Aug  6 15:13:38 2024
+Terminated at Tue Aug  6 15:30:20 2024
+Results reported at Tue Aug  6 15:30:20 2024
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+python benchmarking/sa_gpu/SignatureAnalyzer-GPU.py --data benchmarking/filtered_counts_2000.npz --max_iter=100000 --output_dir benchmarking/sa_gpu/output --K0 100 --prior_on_W L1 --prior_on_H L2 --labeled
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   1028.00 sec.
+    Max Memory :                                 15785 MB
+    Average Memory :                             13790.62 MB
+    Total Requested Memory :                     512000.00 MB
+    Delta Memory :                               496215.00 MB
+    Max Swap :                                   -
+    Max Processes :                              3
+    Max Threads :                                144
+    Run time :                                   985 sec.
+    Turnaround time :                            1010 sec.
+
+The output (if any) is above this job summary.
+
