@@ -1,14 +1,9 @@
 # CSI-GEP
-Consensus and Scalable Interpretations of Gene Expression Programs in Single Cells
-
-## Benchmarking 
-We show a complete example of benchmarking analysis on a simulated dataset with 250,000 cells and 25,000 genes. The simulated data is stored at simulated_data/.\
-Insert figure here.\
-Details can be found in Readme.md at benchmarking/.
-
+Consensus and Scalable Interpretations of Gene Expression Programs in Single Cells.\
+We provide a bash file for submitting jobs on HPC and all scripts package dependencies can be found at CSI-GEP/.
 
 ## Docker
-We provide Docker images that minimize conplexity of configuration, and a step-by-step general instruction on running it on HPC.
+We provide Docker images that minimize complexity of configuration, and a step-by-step general instruction of running it on HPC.
 1. On your local host, pull Docker images:
    ```
    docekr pull ghcr.io/geeleherlab/csi-gep_py:latest
@@ -32,3 +27,11 @@ We provide Docker images that minimize conplexity of configuration, and a step-b
    singularity pull docker://svlprhpcreg01.stjude.org/hpcf/hpcf/csi-gep_r:latest
    ```
    An example code of executing the Dockerized CSI-GEP *csigep_submit.bsub* can be found at Docker/.
+
+
+## Benchmarking 
+We show a complete example of benchmarking analysis on a simulated dataset with 250,000 cells and 25,000 genes. The simulated data is stored at simulated_data/.\
+Insert figure here.\
+Details can be found in Readme.md at benchmarking/.
+
+
