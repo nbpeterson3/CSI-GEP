@@ -10,13 +10,15 @@
    ```
    bsub < CSI-GEP/csigep_submit.bsub # rescue step is disabled for the complexity of the dataset
    ```
-   CSI-GEP automatically determines 41 GEPs at JL = 20 & k = 47
+   CSI-GEP automatically determines 41 GEPs at JL = 20 & k = 47.\
+   Final results can be found at CSI-GEP/output_for_benchmarking/GEP_results/.
 
 ## Run SA-GPU
    ```
    python benchmarking/sa_gpu/cmd_SA_GPU.py
    ```
-   SA-GPU automatically picks k = 50
+   SA-GPU automatically picks k = 50. logfile can be found at benchmarking/sa_gpu/output/.\
+   Output files can be found on [Open Science Framework](https://osf.io/tknm2/). 
 
 ## Run ScVI
    ```
@@ -30,12 +32,14 @@
 ## Run iNMF
    ```
    bsub < benchmarking/inmf/suggestK.bsub
-   Rscript becnmarking/inmf/elbow.R # k = 60
+   Rscript becnmarking/inmf/elbow.R # k = 52
    ```
    Modify k value in benchmarking/inmf/inmf_run.R
    ```
    bsub < benchmarking/inmf/inmf.bsub
    ```
+   Output files can be found on [Open Science Framework](https://osf.io/tknm2/) and benchmarking/inmf/output/. 
+   
 ## Summary
    1. ### Heatmaps
    2. ### Customized metrics
