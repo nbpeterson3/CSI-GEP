@@ -24,10 +24,11 @@
    ```
    python benchmarking/scvi/cmd_scvi.py # comment out lines 17 & 18, uncomment line 12
    ```
-   Based on the output log file, marginal ll = 245.57 at k = 25 is relatively the lowest among reasonably large value of k
+   Based on the output log file, marginal ll = -185.0074 at k = 42 is relatively the lowest among reasonably large value of k
    ```
    python benchmarking/scvi/cmd_scvi.py # uncomment lines 17 & 18, comment out line 12
    ```
+   Output files can be found on [Open Science Framework](https://osf.io/tknm2/) and benchmarking/scvi/output/.
 
 ## Run iNMF
    ```
@@ -41,8 +42,15 @@
    Output files can be found on [Open Science Framework](https://osf.io/tknm2/) and benchmarking/inmf/output/. 
    
 ## Summary
-   1. ### Heatmaps
-   2. ### Customized metrics
-   3. ### Simplified silhouette score
-   4. ### Mutual information
-   5. ### Adjusted Rand index
+   1. ### Heatmaps 
+      The cell usage scores are converted into contingency table by
+      1. first assigning a GEP ID to each cell for which it has the highest usage score; and
+      2. selecting cells only expressing a GEP with usage score higher than the avergae of all cells assigned to this GEP.
+      Details can be found in the Methods section of our paper. \
+      The contingency tables are reordered so that the maximum cell counts lie on the diagonal. \
+      [Alt text](https://www.github.com/geeleherlab/CSI-GEP/main/benchmarking/heatmaps.pdf)
+
+   3. ### Customized metrics
+   4. ### Simplified silhouette score
+   5. ### Mutual information
+   6. ### Adjusted Rand index
