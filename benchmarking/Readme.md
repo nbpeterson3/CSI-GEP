@@ -51,11 +51,11 @@
       ![heatmap](https://github.com/geeleherlab/CSI-GEP/blob/main/benchmarking/summary/heatmaps.png)
 
    3. ### Customized metrics
-      We quantitatively evaluate performace of the methods' capacity to accurately identify ground truth GEPs. Details can be found in the Methods section of our paper. \
+      We quantitatively evaluate performace of the methods' capacity to accurately identify ground truth GEPs. Details can be found in the Methods section of our paper. 
    5. ### Simplified silhouette score
-      Simplified silhouette score calculated on randomly sampled 5,000 cells using adjusted cosine distance. Details can be found in the Methods section of our paper. \
+      Simplified silhouette score calculated on randomly sampled 5,000 cells using adjusted cosine distance. Details can be found in the Methods section of our paper. 
    7. ### Mutual information
-      Mutual information implemented based on contingency tables. Details can be found in the Methods section of our paper. \
+      Mutual information implemented based on contingency tables. Details can be found in the Methods section of our paper. 
    9. ### Adjusted Rand index
-      Adjusted Rand index implemented based on contingency tables. Details can be found in the Methods section of our paper. \
+      Adjusted Rand index implemented based on contingency tables. Details can be found in the Methods section of our paper. 
       ![comparison](https://github.com/geeleherlab/CSI-GEP/blob/main/benchmarking/summary/metrics.png)
