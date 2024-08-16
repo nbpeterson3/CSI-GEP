@@ -1,0 +1,709 @@
+/home/xliu38/.conda/envs/scvi/lib/python3.10/site-packages/scvi/_settings.py:63: UserWarning: Since v1.0.0, scvi-tools no longer uses a random seed by default. Run `scvi.settings.seed = 0` to reproduce results from previous versions.
+  self.seed = seed
+/home/xliu38/.conda/envs/scvi/lib/python3.10/site-packages/scvi/_settings.py:70: UserWarning: Setting `dl_pin_memory_gpu_training` is deprecated in v1.0 and will be removed in v1.1. Please pass in `pin_memory` to the data loaders instead.
+  self.dl_pin_memory_gpu_training = (
+/home/xliu38/.conda/envs/scvi/lib/python3.10/abc.py:119: FutureWarning: SparseDataset is deprecated and will be removed in late 2024. It has been replaced by the public classes CSRDataset and CSCDataset.
+
+For instance checks, use `isinstance(X, (anndata.experimental.CSRDataset, anndata.experimental.CSCDataset))` instead.
+
+For creation, use `anndata.experimental.sparse_dataset(X)` instead.
+
+  return _abc_instancecheck(cls, instance)
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1722974142.648011 1207114 tfrt_cpu_pjrt_client.cc:349] TfrtCpuClient created.
+No GPU/TPU found, falling back to CPU. (Set TF_CPP_MIN_LOG_LEVEL=0 and rerun for more info.)
+/home/xliu38/.conda/envs/scvi/lib/python3.10/site-packages/scvi/train/_trainrunner.py:76: UserWarning: `use_gpu` is deprecated in v1.0 and will be removed in v1.1. Please use `accelerator` and `devices` instead.
+  accelerator, lightning_devices, device = parse_device_args(
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+You are using a CUDA device ('NVIDIA A100-SXM4-80GB') that has Tensor Cores. To properly utilize them, you should set `torch.set_float32_matmul_precision('medium' | 'high')` which will trade-off precision for performance. For more details, read https://pytorch.org/docs/stable/generated/torch.set_float32_matmul_precision.html#torch.set_float32_matmul_precision
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+/home/xliu38/.conda/envs/scvi/lib/python3.10/site-packages/scvi/train/_trainrunner.py:76: UserWarning: `use_gpu` is deprecated in v1.0 and will be removed in v1.1. Please use `accelerator` and `devices` instead.
+  accelerator, lightning_devices, device = parse_device_args(
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+`Trainer.fit` stopped: `max_epochs=500` reached.
+/home/xliu38/.conda/envs/scvi/lib/python3.10/site-packages/scvi/train/_trainrunner.py:76: UserWarning: `use_gpu` is deprecated in v1.0 and will be removed in v1.1. Please use `accelerator` and `devices` instead.
+  accelerator, lightning_devices, device = parse_device_args(
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+`Trainer.fit` stopped: `max_epochs=500` reached.
+/home/xliu38/.conda/envs/scvi/lib/python3.10/site-packages/scvi/train/_trainrunner.py:76: UserWarning: `use_gpu` is deprecated in v1.0 and will be removed in v1.1. Please use `accelerator` and `devices` instead.
+  accelerator, lightning_devices, device = parse_device_args(
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+/home/xliu38/.conda/envs/scvi/lib/python3.10/site-packages/scvi/train/_trainrunner.py:76: UserWarning: `use_gpu` is deprecated in v1.0 and will be removed in v1.1. Please use `accelerator` and `devices` instead.
+  accelerator, lightning_devices, device = parse_device_args(
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+`Trainer.fit` stopped: `max_epochs=500` reached.
+/home/xliu38/.conda/envs/scvi/lib/python3.10/site-packages/scvi/train/_trainrunner.py:76: UserWarning: `use_gpu` is deprecated in v1.0 and will be removed in v1.1. Please use `accelerator` and `devices` instead.
+  accelerator, lightning_devices, device = parse_device_args(
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+`Trainer.fit` stopped: `max_epochs=500` reached.
+/home/xliu38/.conda/envs/scvi/lib/python3.10/site-packages/scvi/train/_trainrunner.py:76: UserWarning: `use_gpu` is deprecated in v1.0 and will be removed in v1.1. Please use `accelerator` and `devices` instead.
+  accelerator, lightning_devices, device = parse_device_args(
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+`Trainer.fit` stopped: `max_epochs=500` reached.
+/home/xliu38/.conda/envs/scvi/lib/python3.10/site-packages/scvi/train/_trainrunner.py:76: UserWarning: `use_gpu` is deprecated in v1.0 and will be removed in v1.1. Please use `accelerator` and `devices` instead.
+  accelerator, lightning_devices, device = parse_device_args(
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+`Trainer.fit` stopped: `max_epochs=500` reached.
+/home/xliu38/.conda/envs/scvi/lib/python3.10/site-packages/scvi/train/_trainrunner.py:76: UserWarning: `use_gpu` is deprecated in v1.0 and will be removed in v1.1. Please use `accelerator` and `devices` instead.
+  accelerator, lightning_devices, device = parse_device_args(
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+`Trainer.fit` stopped: `max_epochs=500` reached.
+/home/xliu38/.conda/envs/scvi/lib/python3.10/site-packages/scvi/train/_trainrunner.py:76: UserWarning: `use_gpu` is deprecated in v1.0 and will be removed in v1.1. Please use `accelerator` and `devices` instead.
+  accelerator, lightning_devices, device = parse_device_args(
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+/home/xliu38/.conda/envs/scvi/lib/python3.10/site-packages/scvi/train/_trainrunner.py:76: UserWarning: `use_gpu` is deprecated in v1.0 and will be removed in v1.1. Please use `accelerator` and `devices` instead.
+  accelerator, lightning_devices, device = parse_device_args(
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+`Trainer.fit` stopped: `max_epochs=500` reached.
+/home/xliu38/.conda/envs/scvi/lib/python3.10/site-packages/scvi/train/_trainrunner.py:76: UserWarning: `use_gpu` is deprecated in v1.0 and will be removed in v1.1. Please use `accelerator` and `devices` instead.
+  accelerator, lightning_devices, device = parse_device_args(
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+/home/xliu38/.conda/envs/scvi/lib/python3.10/site-packages/scvi/train/_trainrunner.py:76: UserWarning: `use_gpu` is deprecated in v1.0 and will be removed in v1.1. Please use `accelerator` and `devices` instead.
+  accelerator, lightning_devices, device = parse_device_args(
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+`Trainer.fit` stopped: `max_epochs=500` reached.
+/home/xliu38/.conda/envs/scvi/lib/python3.10/site-packages/scvi/train/_trainrunner.py:76: UserWarning: `use_gpu` is deprecated in v1.0 and will be removed in v1.1. Please use `accelerator` and `devices` instead.
+  accelerator, lightning_devices, device = parse_device_args(
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+`Trainer.fit` stopped: `max_epochs=500` reached.
+/home/xliu38/.conda/envs/scvi/lib/python3.10/site-packages/scvi/train/_trainrunner.py:76: UserWarning: `use_gpu` is deprecated in v1.0 and will be removed in v1.1. Please use `accelerator` and `devices` instead.
+  accelerator, lightning_devices, device = parse_device_args(
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+`Trainer.fit` stopped: `max_epochs=500` reached.
+/home/xliu38/.conda/envs/scvi/lib/python3.10/site-packages/scvi/train/_trainrunner.py:76: UserWarning: `use_gpu` is deprecated in v1.0 and will be removed in v1.1. Please use `accelerator` and `devices` instead.
+  accelerator, lightning_devices, device = parse_device_args(
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+`Trainer.fit` stopped: `max_epochs=500` reached.
+/home/xliu38/.conda/envs/scvi/lib/python3.10/site-packages/scvi/train/_trainrunner.py:76: UserWarning: `use_gpu` is deprecated in v1.0 and will be removed in v1.1. Please use `accelerator` and `devices` instead.
+  accelerator, lightning_devices, device = parse_device_args(
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+/home/xliu38/.conda/envs/scvi/lib/python3.10/site-packages/scvi/train/_trainrunner.py:76: UserWarning: `use_gpu` is deprecated in v1.0 and will be removed in v1.1. Please use `accelerator` and `devices` instead.
+  accelerator, lightning_devices, device = parse_device_args(
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+`Trainer.fit` stopped: `max_epochs=500` reached.
+/home/xliu38/.conda/envs/scvi/lib/python3.10/site-packages/scvi/train/_trainrunner.py:76: UserWarning: `use_gpu` is deprecated in v1.0 and will be removed in v1.1. Please use `accelerator` and `devices` instead.
+  accelerator, lightning_devices, device = parse_device_args(
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+`Trainer.fit` stopped: `max_epochs=500` reached.
+/home/xliu38/.conda/envs/scvi/lib/python3.10/site-packages/scvi/train/_trainrunner.py:76: UserWarning: `use_gpu` is deprecated in v1.0 and will be removed in v1.1. Please use `accelerator` and `devices` instead.
+  accelerator, lightning_devices, device = parse_device_args(
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+`Trainer.fit` stopped: `max_epochs=500` reached.
+/home/xliu38/.conda/envs/scvi/lib/python3.10/site-packages/scvi/train/_trainrunner.py:76: UserWarning: `use_gpu` is deprecated in v1.0 and will be removed in v1.1. Please use `accelerator` and `devices` instead.
+  accelerator, lightning_devices, device = parse_device_args(
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+`Trainer.fit` stopped: `max_epochs=500` reached.
+/home/xliu38/.conda/envs/scvi/lib/python3.10/site-packages/scvi/train/_trainrunner.py:76: UserWarning: `use_gpu` is deprecated in v1.0 and will be removed in v1.1. Please use `accelerator` and `devices` instead.
+  accelerator, lightning_devices, device = parse_device_args(
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+`Trainer.fit` stopped: `max_epochs=500` reached.
+/home/xliu38/.conda/envs/scvi/lib/python3.10/site-packages/scvi/train/_trainrunner.py:76: UserWarning: `use_gpu` is deprecated in v1.0 and will be removed in v1.1. Please use `accelerator` and `devices` instead.
+  accelerator, lightning_devices, device = parse_device_args(
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+/home/xliu38/.conda/envs/scvi/lib/python3.10/site-packages/scvi/train/_trainrunner.py:76: UserWarning: `use_gpu` is deprecated in v1.0 and will be removed in v1.1. Please use `accelerator` and `devices` instead.
+  accelerator, lightning_devices, device = parse_device_args(
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+`Trainer.fit` stopped: `max_epochs=500` reached.
+/home/xliu38/.conda/envs/scvi/lib/python3.10/site-packages/scvi/train/_trainrunner.py:76: UserWarning: `use_gpu` is deprecated in v1.0 and will be removed in v1.1. Please use `accelerator` and `devices` instead.
+  accelerator, lightning_devices, device = parse_device_args(
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+`Trainer.fit` stopped: `max_epochs=500` reached.
+/home/xliu38/.conda/envs/scvi/lib/python3.10/site-packages/scvi/train/_trainrunner.py:76: UserWarning: `use_gpu` is deprecated in v1.0 and will be removed in v1.1. Please use `accelerator` and `devices` instead.
+  accelerator, lightning_devices, device = parse_device_args(
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+`Trainer.fit` stopped: `max_epochs=500` reached.
+/home/xliu38/.conda/envs/scvi/lib/python3.10/site-packages/scvi/train/_trainrunner.py:76: UserWarning: `use_gpu` is deprecated in v1.0 and will be removed in v1.1. Please use `accelerator` and `devices` instead.
+  accelerator, lightning_devices, device = parse_device_args(
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+`Trainer.fit` stopped: `max_epochs=500` reached.
+/home/xliu38/.conda/envs/scvi/lib/python3.10/site-packages/scvi/train/_trainrunner.py:76: UserWarning: `use_gpu` is deprecated in v1.0 and will be removed in v1.1. Please use `accelerator` and `devices` instead.
+  accelerator, lightning_devices, device = parse_device_args(
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+/home/xliu38/.conda/envs/scvi/lib/python3.10/site-packages/scvi/train/_trainrunner.py:76: UserWarning: `use_gpu` is deprecated in v1.0 and will be removed in v1.1. Please use `accelerator` and `devices` instead.
+  accelerator, lightning_devices, device = parse_device_args(
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+`Trainer.fit` stopped: `max_epochs=500` reached.
+/home/xliu38/.conda/envs/scvi/lib/python3.10/site-packages/scvi/train/_trainrunner.py:76: UserWarning: `use_gpu` is deprecated in v1.0 and will be removed in v1.1. Please use `accelerator` and `devices` instead.
+  accelerator, lightning_devices, device = parse_device_args(
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+`Trainer.fit` stopped: `max_epochs=500` reached.
+/home/xliu38/.conda/envs/scvi/lib/python3.10/site-packages/scvi/train/_trainrunner.py:76: UserWarning: `use_gpu` is deprecated in v1.0 and will be removed in v1.1. Please use `accelerator` and `devices` instead.
+  accelerator, lightning_devices, device = parse_device_args(
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+`Trainer.fit` stopped: `max_epochs=500` reached.
+/home/xliu38/.conda/envs/scvi/lib/python3.10/site-packages/scvi/train/_trainrunner.py:76: UserWarning: `use_gpu` is deprecated in v1.0 and will be removed in v1.1. Please use `accelerator` and `devices` instead.
+  accelerator, lightning_devices, device = parse_device_args(
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+`Trainer.fit` stopped: `max_epochs=500` reached.
+/home/xliu38/.conda/envs/scvi/lib/python3.10/site-packages/scvi/train/_trainrunner.py:76: UserWarning: `use_gpu` is deprecated in v1.0 and will be removed in v1.1. Please use `accelerator` and `devices` instead.
+  accelerator, lightning_devices, device = parse_device_args(
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+`Trainer.fit` stopped: `max_epochs=500` reached.
+/home/xliu38/.conda/envs/scvi/lib/python3.10/site-packages/scvi/train/_trainrunner.py:76: UserWarning: `use_gpu` is deprecated in v1.0 and will be removed in v1.1. Please use `accelerator` and `devices` instead.
+  accelerator, lightning_devices, device = parse_device_args(
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+`Trainer.fit` stopped: `max_epochs=500` reached.
+/home/xliu38/.conda/envs/scvi/lib/python3.10/site-packages/scvi/train/_trainrunner.py:76: UserWarning: `use_gpu` is deprecated in v1.0 and will be removed in v1.1. Please use `accelerator` and `devices` instead.
+  accelerator, lightning_devices, device = parse_device_args(
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+`Trainer.fit` stopped: `max_epochs=500` reached.
+/home/xliu38/.conda/envs/scvi/lib/python3.10/site-packages/scvi/train/_trainrunner.py:76: UserWarning: `use_gpu` is deprecated in v1.0 and will be removed in v1.1. Please use `accelerator` and `devices` instead.
+  accelerator, lightning_devices, device = parse_device_args(
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+`Trainer.fit` stopped: `max_epochs=500` reached.
+/home/xliu38/.conda/envs/scvi/lib/python3.10/site-packages/scvi/train/_trainrunner.py:76: UserWarning: `use_gpu` is deprecated in v1.0 and will be removed in v1.1. Please use `accelerator` and `devices` instead.
+  accelerator, lightning_devices, device = parse_device_args(
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+`Trainer.fit` stopped: `max_epochs=500` reached.
+/home/xliu38/.conda/envs/scvi/lib/python3.10/site-packages/scvi/train/_trainrunner.py:76: UserWarning: `use_gpu` is deprecated in v1.0 and will be removed in v1.1. Please use `accelerator` and `devices` instead.
+  accelerator, lightning_devices, device = parse_device_args(
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+`Trainer.fit` stopped: `max_epochs=500` reached.
+/home/xliu38/.conda/envs/scvi/lib/python3.10/site-packages/scvi/train/_trainrunner.py:76: UserWarning: `use_gpu` is deprecated in v1.0 and will be removed in v1.1. Please use `accelerator` and `devices` instead.
+  accelerator, lightning_devices, device = parse_device_args(
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+`Trainer.fit` stopped: `max_epochs=500` reached.
+/home/xliu38/.conda/envs/scvi/lib/python3.10/site-packages/scvi/train/_trainrunner.py:76: UserWarning: `use_gpu` is deprecated in v1.0 and will be removed in v1.1. Please use `accelerator` and `devices` instead.
+  accelerator, lightning_devices, device = parse_device_args(
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+`Trainer.fit` stopped: `max_epochs=500` reached.
+/home/xliu38/.conda/envs/scvi/lib/python3.10/site-packages/scvi/train/_trainrunner.py:76: UserWarning: `use_gpu` is deprecated in v1.0 and will be removed in v1.1. Please use `accelerator` and `devices` instead.
+  accelerator, lightning_devices, device = parse_device_args(
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+`Trainer.fit` stopped: `max_epochs=500` reached.
+/home/xliu38/.conda/envs/scvi/lib/python3.10/site-packages/scvi/train/_trainrunner.py:76: UserWarning: `use_gpu` is deprecated in v1.0 and will be removed in v1.1. Please use `accelerator` and `devices` instead.
+  accelerator, lightning_devices, device = parse_device_args(
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+`Trainer.fit` stopped: `max_epochs=500` reached.
+/home/xliu38/.conda/envs/scvi/lib/python3.10/site-packages/scvi/train/_trainrunner.py:76: UserWarning: `use_gpu` is deprecated in v1.0 and will be removed in v1.1. Please use `accelerator` and `devices` instead.
+  accelerator, lightning_devices, device = parse_device_args(
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+`Trainer.fit` stopped: `max_epochs=500` reached.
+/home/xliu38/.conda/envs/scvi/lib/python3.10/site-packages/scvi/train/_trainrunner.py:76: UserWarning: `use_gpu` is deprecated in v1.0 and will be removed in v1.1. Please use `accelerator` and `devices` instead.
+  accelerator, lightning_devices, device = parse_device_args(
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+`Trainer.fit` stopped: `max_epochs=500` reached.
+/home/xliu38/.conda/envs/scvi/lib/python3.10/site-packages/scvi/train/_trainrunner.py:76: UserWarning: `use_gpu` is deprecated in v1.0 and will be removed in v1.1. Please use `accelerator` and `devices` instead.
+  accelerator, lightning_devices, device = parse_device_args(
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+`Trainer.fit` stopped: `max_epochs=500` reached.
+/home/xliu38/.conda/envs/scvi/lib/python3.10/site-packages/scvi/train/_trainrunner.py:76: UserWarning: `use_gpu` is deprecated in v1.0 and will be removed in v1.1. Please use `accelerator` and `devices` instead.
+  accelerator, lightning_devices, device = parse_device_args(
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+/home/xliu38/.conda/envs/scvi/lib/python3.10/site-packages/scvi/train/_trainrunner.py:76: UserWarning: `use_gpu` is deprecated in v1.0 and will be removed in v1.1. Please use `accelerator` and `devices` instead.
+  accelerator, lightning_devices, device = parse_device_args(
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+`Trainer.fit` stopped: `max_epochs=500` reached.
+/home/xliu38/.conda/envs/scvi/lib/python3.10/site-packages/scvi/train/_trainrunner.py:76: UserWarning: `use_gpu` is deprecated in v1.0 and will be removed in v1.1. Please use `accelerator` and `devices` instead.
+  accelerator, lightning_devices, device = parse_device_args(
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+`Trainer.fit` stopped: `max_epochs=500` reached.
+/home/xliu38/.conda/envs/scvi/lib/python3.10/site-packages/scvi/train/_trainrunner.py:76: UserWarning: `use_gpu` is deprecated in v1.0 and will be removed in v1.1. Please use `accelerator` and `devices` instead.
+  accelerator, lightning_devices, device = parse_device_args(
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+`Trainer.fit` stopped: `max_epochs=500` reached.
+/home/xliu38/.conda/envs/scvi/lib/python3.10/site-packages/scvi/train/_trainrunner.py:76: UserWarning: `use_gpu` is deprecated in v1.0 and will be removed in v1.1. Please use `accelerator` and `devices` instead.
+  accelerator, lightning_devices, device = parse_device_args(
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+`Trainer.fit` stopped: `max_epochs=500` reached.
+/home/xliu38/.conda/envs/scvi/lib/python3.10/site-packages/scvi/train/_trainrunner.py:76: UserWarning: `use_gpu` is deprecated in v1.0 and will be removed in v1.1. Please use `accelerator` and `devices` instead.
+  accelerator, lightning_devices, device = parse_device_args(
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+`Trainer.fit` stopped: `max_epochs=500` reached.
+/home/xliu38/.conda/envs/scvi/lib/python3.10/site-packages/scvi/train/_trainrunner.py:76: UserWarning: `use_gpu` is deprecated in v1.0 and will be removed in v1.1. Please use `accelerator` and `devices` instead.
+  accelerator, lightning_devices, device = parse_device_args(
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+`Trainer.fit` stopped: `max_epochs=500` reached.
+/home/xliu38/.conda/envs/scvi/lib/python3.10/site-packages/scvi/train/_trainrunner.py:76: UserWarning: `use_gpu` is deprecated in v1.0 and will be removed in v1.1. Please use `accelerator` and `devices` instead.
+  accelerator, lightning_devices, device = parse_device_args(
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+`Trainer.fit` stopped: `max_epochs=500` reached.
+/home/xliu38/.conda/envs/scvi/lib/python3.10/site-packages/scvi/train/_trainrunner.py:76: UserWarning: `use_gpu` is deprecated in v1.0 and will be removed in v1.1. Please use `accelerator` and `devices` instead.
+  accelerator, lightning_devices, device = parse_device_args(
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+`Trainer.fit` stopped: `max_epochs=500` reached.
+/home/xliu38/.conda/envs/scvi/lib/python3.10/site-packages/scvi/train/_trainrunner.py:76: UserWarning: `use_gpu` is deprecated in v1.0 and will be removed in v1.1. Please use `accelerator` and `devices` instead.
+  accelerator, lightning_devices, device = parse_device_args(
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+`Trainer.fit` stopped: `max_epochs=500` reached.
+/home/xliu38/.conda/envs/scvi/lib/python3.10/site-packages/scvi/train/_trainrunner.py:76: UserWarning: `use_gpu` is deprecated in v1.0 and will be removed in v1.1. Please use `accelerator` and `devices` instead.
+  accelerator, lightning_devices, device = parse_device_args(
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+`Trainer.fit` stopped: `max_epochs=500` reached.
+/home/xliu38/.conda/envs/scvi/lib/python3.10/site-packages/scvi/train/_trainrunner.py:76: UserWarning: `use_gpu` is deprecated in v1.0 and will be removed in v1.1. Please use `accelerator` and `devices` instead.
+  accelerator, lightning_devices, device = parse_device_args(
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+`Trainer.fit` stopped: `max_epochs=500` reached.
+/home/xliu38/.conda/envs/scvi/lib/python3.10/site-packages/scvi/train/_trainrunner.py:76: UserWarning: `use_gpu` is deprecated in v1.0 and will be removed in v1.1. Please use `accelerator` and `devices` instead.
+  accelerator, lightning_devices, device = parse_device_args(
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+`Trainer.fit` stopped: `max_epochs=500` reached.
+/home/xliu38/.conda/envs/scvi/lib/python3.10/site-packages/scvi/train/_trainrunner.py:76: UserWarning: `use_gpu` is deprecated in v1.0 and will be removed in v1.1. Please use `accelerator` and `devices` instead.
+  accelerator, lightning_devices, device = parse_device_args(
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+`Trainer.fit` stopped: `max_epochs=500` reached.
+/home/xliu38/.conda/envs/scvi/lib/python3.10/site-packages/scvi/train/_trainrunner.py:76: UserWarning: `use_gpu` is deprecated in v1.0 and will be removed in v1.1. Please use `accelerator` and `devices` instead.
+  accelerator, lightning_devices, device = parse_device_args(
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+`Trainer.fit` stopped: `max_epochs=500` reached.
+/home/xliu38/.conda/envs/scvi/lib/python3.10/site-packages/scvi/train/_trainrunner.py:76: UserWarning: `use_gpu` is deprecated in v1.0 and will be removed in v1.1. Please use `accelerator` and `devices` instead.
+  accelerator, lightning_devices, device = parse_device_args(
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+`Trainer.fit` stopped: `max_epochs=500` reached.
+/home/xliu38/.conda/envs/scvi/lib/python3.10/site-packages/scvi/train/_trainrunner.py:76: UserWarning: `use_gpu` is deprecated in v1.0 and will be removed in v1.1. Please use `accelerator` and `devices` instead.
+  accelerator, lightning_devices, device = parse_device_args(
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+`Trainer.fit` stopped: `max_epochs=500` reached.
+/home/xliu38/.conda/envs/scvi/lib/python3.10/site-packages/scvi/train/_trainrunner.py:76: UserWarning: `use_gpu` is deprecated in v1.0 and will be removed in v1.1. Please use `accelerator` and `devices` instead.
+  accelerator, lightning_devices, device = parse_device_args(
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+`Trainer.fit` stopped: `max_epochs=500` reached.
+/home/xliu38/.conda/envs/scvi/lib/python3.10/site-packages/scvi/train/_trainrunner.py:76: UserWarning: `use_gpu` is deprecated in v1.0 and will be removed in v1.1. Please use `accelerator` and `devices` instead.
+  accelerator, lightning_devices, device = parse_device_args(
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+`Trainer.fit` stopped: `max_epochs=500` reached.
+/home/xliu38/.conda/envs/scvi/lib/python3.10/site-packages/scvi/train/_trainrunner.py:76: UserWarning: `use_gpu` is deprecated in v1.0 and will be removed in v1.1. Please use `accelerator` and `devices` instead.
+  accelerator, lightning_devices, device = parse_device_args(
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+`Trainer.fit` stopped: `max_epochs=500` reached.
+/home/xliu38/.conda/envs/scvi/lib/python3.10/site-packages/scvi/train/_trainrunner.py:76: UserWarning: `use_gpu` is deprecated in v1.0 and will be removed in v1.1. Please use `accelerator` and `devices` instead.
+  accelerator, lightning_devices, device = parse_device_args(
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+`Trainer.fit` stopped: `max_epochs=500` reached.
+/home/xliu38/.conda/envs/scvi/lib/python3.10/site-packages/scvi/train/_trainrunner.py:76: UserWarning: `use_gpu` is deprecated in v1.0 and will be removed in v1.1. Please use `accelerator` and `devices` instead.
+  accelerator, lightning_devices, device = parse_device_args(
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+`Trainer.fit` stopped: `max_epochs=500` reached.
+/home/xliu38/.conda/envs/scvi/lib/python3.10/site-packages/scvi/train/_trainrunner.py:76: UserWarning: `use_gpu` is deprecated in v1.0 and will be removed in v1.1. Please use `accelerator` and `devices` instead.
+  accelerator, lightning_devices, device = parse_device_args(
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+`Trainer.fit` stopped: `max_epochs=500` reached.
+/home/xliu38/.conda/envs/scvi/lib/python3.10/site-packages/scvi/train/_trainrunner.py:76: UserWarning: `use_gpu` is deprecated in v1.0 and will be removed in v1.1. Please use `accelerator` and `devices` instead.
+  accelerator, lightning_devices, device = parse_device_args(
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+`Trainer.fit` stopped: `max_epochs=500` reached.
+/home/xliu38/.conda/envs/scvi/lib/python3.10/site-packages/scvi/train/_trainrunner.py:76: UserWarning: `use_gpu` is deprecated in v1.0 and will be removed in v1.1. Please use `accelerator` and `devices` instead.
+  accelerator, lightning_devices, device = parse_device_args(
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+`Trainer.fit` stopped: `max_epochs=500` reached.
+/home/xliu38/.conda/envs/scvi/lib/python3.10/site-packages/scvi/train/_trainrunner.py:76: UserWarning: `use_gpu` is deprecated in v1.0 and will be removed in v1.1. Please use `accelerator` and `devices` instead.
+  accelerator, lightning_devices, device = parse_device_args(
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+`Trainer.fit` stopped: `max_epochs=500` reached.
+/home/xliu38/.conda/envs/scvi/lib/python3.10/site-packages/scvi/train/_trainrunner.py:76: UserWarning: `use_gpu` is deprecated in v1.0 and will be removed in v1.1. Please use `accelerator` and `devices` instead.
+  accelerator, lightning_devices, device = parse_device_args(
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+`Trainer.fit` stopped: `max_epochs=500` reached.
+/home/xliu38/.conda/envs/scvi/lib/python3.10/site-packages/scvi/train/_trainrunner.py:76: UserWarning: `use_gpu` is deprecated in v1.0 and will be removed in v1.1. Please use `accelerator` and `devices` instead.
+  accelerator, lightning_devices, device = parse_device_args(
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+`Trainer.fit` stopped: `max_epochs=500` reached.
+Monitored metric elbo_validation did not improve in the last 45 records. Best score: 858.856. Signaling Trainer to stop.
+k = 2, marginal log-likelihood = 278.35710934143106
+k = 3, marginal log-likelihood = -185.07416218549716
+k = 4, marginal log-likelihood = -190.6403918622582
+Monitored metric elbo_validation did not improve in the last 45 records. Best score: 851.788. Signaling Trainer to stop.
+k = 5, marginal log-likelihood = -190.3978871820893
+k = 6, marginal log-likelihood = -190.41887795986148
+k = 7, marginal log-likelihood = -189.53470641051246
+k = 8, marginal log-likelihood = -187.56545888730912
+k = 9, marginal log-likelihood = -185.22415604684102
+k = 10, marginal log-likelihood = -187.63204776642877
+Monitored metric elbo_validation did not improve in the last 45 records. Best score: 853.575. Signaling Trainer to stop.
+k = 11, marginal log-likelihood = -185.01771692219387
+k = 12, marginal log-likelihood = -185.97947884386858
+Monitored metric elbo_validation did not improve in the last 45 records. Best score: 851.318. Signaling Trainer to stop.
+k = 13, marginal log-likelihood = -184.99124673981993
+k = 14, marginal log-likelihood = -185.4660762076246
+k = 15, marginal log-likelihood = -183.07535976226401
+k = 16, marginal log-likelihood = -184.44578397823088
+k = 17, marginal log-likelihood = -183.39095528367355
+Monitored metric elbo_validation did not improve in the last 45 records. Best score: 854.708. Signaling Trainer to stop.
+k = 18, marginal log-likelihood = -184.81598067308033
+k = 19, marginal log-likelihood = -183.902614064446
+k = 20, marginal log-likelihood = -185.03788333685884
+k = 21, marginal log-likelihood = -183.85267155782958
+k = 22, marginal log-likelihood = -183.49794512956632
+k = 23, marginal log-likelihood = -183.00519586365934
+Monitored metric elbo_validation did not improve in the last 45 records. Best score: 847.741. Signaling Trainer to stop.
+k = 24, marginal log-likelihood = -182.7903126586789
+k = 25, marginal log-likelihood = -183.59590815424065
+k = 26, marginal log-likelihood = -183.50052022592317
+k = 27, marginal log-likelihood = -183.52258352906335
+k = 28, marginal log-likelihood = -183.21962651747643
+Monitored metric elbo_validation did not improve in the last 45 records. Best score: 853.860. Signaling Trainer to stop.
+k = 29, marginal log-likelihood = -185.3220642972261
+k = 30, marginal log-likelihood = -182.44406179664324
+k = 31, marginal log-likelihood = -184.27512842020212
+k = 32, marginal log-likelihood = -183.37368215094324
+k = 33, marginal log-likelihood = -184.40268238930523
+k = 34, marginal log-likelihood = -182.71249211407977
+k = 35, marginal log-likelihood = -181.97708083809704
+k = 36, marginal log-likelihood = -184.04929124955146
+k = 37, marginal log-likelihood = -182.5164653871784
+k = 38, marginal log-likelihood = -181.59911828153332
+k = 39, marginal log-likelihood = -181.20034294362688
+k = 40, marginal log-likelihood = -184.8581706801603
+k = 41, marginal log-likelihood = -181.30564026456773
+k = 42, marginal log-likelihood = -185.0074276235965
+k = 43, marginal log-likelihood = -183.8967093191469
+k = 44, marginal log-likelihood = -181.97902899657203
+k = 45, marginal log-likelihood = -181.19633917676757
+k = 46, marginal log-likelihood = -184.4500165859289
+Monitored metric elbo_validation did not improve in the last 45 records. Best score: 859.436. Signaling Trainer to stop.
+k = 47, marginal log-likelihood = -180.22995365459087
+k = 48, marginal log-likelihood = -184.38730235963664
+k = 49, marginal log-likelihood = -184.186590637863
+k = 50, marginal log-likelihood = -182.70187268603667
+k = 51, marginal log-likelihood = -179.9345956683281
+k = 52, marginal log-likelihood = -181.4441432952881
+k = 53, marginal log-likelihood = -184.62490613580115
+k = 54, marginal log-likelihood = -181.04435475602241
+k = 55, marginal log-likelihood = -183.4223629864602
+k = 56, marginal log-likelihood = -182.93966309343415
+k = 57, marginal log-likelihood = -183.61874556565846
+k = 58, marginal log-likelihood = -181.9811147086574
+k = 59, marginal log-likelihood = -185.7850061278016
+k = 60, marginal log-likelihood = -180.380512574312
+k = 70, marginal log-likelihood = -183.22030385855888
+k = 80, marginal log-likelihood = -179.0430599972072
+k = 90, marginal log-likelihood = -180.08338877659372
+k = 100, marginal log-likelihood = -180.51853370471278
+k = 110, marginal log-likelihood = -178.80963459424865
+k = 120, marginal log-likelihood = -178.27324972279607
+k = 130, marginal log-likelihood = -177.49405097082914
+k = 140, marginal log-likelihood = -177.1212305305192
+k = 150, marginal log-likelihood = -177.74919890771747
+k = 160, marginal log-likelihood = -173.37936991898528
+k = 170, marginal log-likelihood = -177.0427502443749
+k = 180, marginal log-likelihood = -176.5555866967692
+k = 190, marginal log-likelihood = -177.929119465417
+k = 200, marginal log-likelihood = -172.30274371749425
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@nodegpu238>
+Subject: Job 233024212: <scvi> in cluster <hpcf_research_cluster> Done
+
+Job <scvi> was submitted from host <noderome105> by user <xliu38> in cluster <hpcf_research_cluster> at Tue Aug  6 14:53:18 2024
+Job was executed on host(s) <nodegpu238>, in queue <gpu>, as user <xliu38> in cluster <hpcf_research_cluster> at Tue Aug  6 14:53:35 2024
+</home/xliu38> was used as the home directory.
+</home/xliu38/acNMF/Github> was used as the working directory.
+Started at Tue Aug  6 14:53:35 2024
+Terminated at Wed Aug 14 17:52:36 2024
+Results reported at Wed Aug 14 17:52:36 2024
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+python benchmarking/scvi/trainer.py --counts benchmarking/filtered_counts_2000.npz --layers 2 --option 1
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   807397.00 sec.
+    Max Memory :                                 12865 MB
+    Average Memory :                             9239.60 MB
+    Total Requested Memory :                     512000.00 MB
+    Delta Memory :                               499135.00 MB
+    Max Swap :                                   48 MB
+    Max Processes :                              3
+    Max Threads :                                529
+    Run time :                                   701943 sec.
+    Turnaround time :                            701958 sec.
+
+The output (if any) is above this job summary.
+
