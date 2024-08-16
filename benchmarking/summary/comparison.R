@@ -53,10 +53,10 @@ color.bar <- function(lut, min, max=-min, nticks=11, ticks=seq(min, max, len=nti
 }
 colors = colormap(colormaps[[12]]) # "YIGnBu"
 
-pdf("benchmarking/summary/heatmaps.pdf", width = 24, height = 8) 
-grid.arrange(p1, p2, p3, p4, color.bar(colors,1,0,nticks=6), ncol=4, nrow = 2, 
-              layout_matrix = rbind(c(1,2,3,4), c(5,5,5,5)),
-              widths = c(2.04, 2.6, 2.5, 2.1), heights = c(1.5, 0.1))
+pdf("benchmarking/summary/heatmaps.pdf", width = 16, height = 8) 
+grid.arrange(p1, p2, p4, p3, color.bar(colors,1,0,nticks=6), ncol=2, nrow = 3, 
+              layout_matrix = rbind(c(1,2), c(3,4), c(5,5)),
+              widths = c(2.1, 2.6), heights = c(1.5, 1.5, 0.2))
 dev.off()
 
 ######## Customized metrics ##########
@@ -220,10 +220,10 @@ ss_df = data.frame(Silhouette = c(ss_scvi, ss_sagpu, ss_inmf, ss_csigep),
 ss_df$model = factor(ss_df$model, levels=c("CSI-GEP",  "iNMF", "SA-GPU","ScVI" ))
 
 p6 = ggplot(ss_df, aes(x=as.factor(model), y = Silhouette, fill = as.factor(model) )) + 
-  geom_bar(stat = 'identity') + geom_text(aes(label=round(Silhouette,2)), vjust=-1) +
+  geom_bar(stat = 'identity') + geom_text(aes(label=round(Silhouette,2)), vjust= 1) +
   scale_fill_hue(c = 40) +
   theme(legend.position="none",
-    text = element_text(size = 8),
+    text = element_text(size = 12),
         axis.title.x = element_blank(),
         panel.grid.minor.x = element_blank(),
         panel.grid.major.x = element_blank(),
@@ -260,7 +260,7 @@ mi_df = data.frame(MI = c(MI_scvi, MI_sagpu, MI_inmf, MI_csigep),
 mi_df$model = factor(mi_df$model, levels=c("CSI-GEP",  "iNMF", "SA-GPU","ScVI" ))
 
 p7 = ggplot(mi_df, aes(x=as.factor(model), y = MI, fill = as.factor(model) )) + 
-  geom_bar(stat = 'identity') + geom_text(aes(label=round(MI,2)), vjust=-1) +
+  geom_bar(stat = 'identity') + geom_text(aes(label=round(MI,2)), vjust=1) +
   scale_fill_hue(c = 40) +
   theme(legend.position="none",
     text = element_text(size = 8),
@@ -269,6 +269,10 @@ p7 = ggplot(mi_df, aes(x=as.factor(model), y = MI, fill = as.factor(model) )) +
         panel.grid.major.x = element_blank(),
         panel.background = element_blank(), axis.line = element_line(colour = "black"))+
   labs(y = "Adjusted Rand Index")
+
+
+
+
 ######## ARI ########
 # function: adjusted Rand index based on contingency table
 ARI_contingency <- function(tbl)
@@ -294,7 +298,7 @@ ari_df = data.frame(ARI = c(ARI_scvi, ARI_sagpu, ARI_inmf, ARI_csigep),
 ari_df$model = factor(ari_df$model, levels=c("CSI-GEP",  "iNMF", "SA-GPU","ScVI" ))
 
 p8 = ggplot(ari_df, aes(x=as.factor(model), y = ARI, fill = as.factor(model) )) + 
-  geom_bar(stat = 'identity') + geom_text(aes(label=round(ARI,2)), vjust=-1) + 
+  geom_bar(stat = 'identity') + geom_text(aes(label=round(ARI,2)), vjust=1) + 
   scale_fill_hue(c = 40) +
   theme(legend.position="none",
     text = element_text(size = 8),
@@ -306,8 +310,8 @@ p8 = ggplot(ari_df, aes(x=as.factor(model), y = ARI, fill = as.factor(model) )) 
 
 
 ###########################################
-pdf("benchmarking/summary/metrics.pdf", width = 24, height = 8) 
-grid.arrange(p5,p6,p7,p8, ncol=4, nrow = 1, 
-              # layout_matrix = c(1,2,3,4),
-              widths = c(1,1,1,1), heights = 1)
+pdf("benchmarking/summary/metrics.pdf") 
+grid.arrange(p5,p6,p7,p8, ncol=2, nrow = 2, 
+              layout_matrix = rbind(c(1,2),c(3,4)),
+              widths = c(1,1), heights = c(1,1))
 dev.off()
