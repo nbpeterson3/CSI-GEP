@@ -48,7 +48,7 @@
       2. selecting cells only expressing a GEP with usage score higher than the avergae of all cells assigned to this GEP.
       Details can be found in the Methods section of our paper. \
       The contingency tables are reordered so that the maximum cell counts lie on the diagonal. \
-      [Alt text](https://www.github.com/geeleherlab/CSI-GEP/main/benchmarking/heatmaps.pdf)
+      ![heatmap](https://github.com/geeleherlab/CSI-GEP/blob/main/benchmarking/summary/heatmaps.png)
 
    3. ### Customized metrics
    4. ### Simplified silhouette score
