@@ -53,10 +53,10 @@ color.bar <- function(lut, min, max=-min, nticks=11, ticks=seq(min, max, len=nti
 }
 colors = colormap(colormaps[[12]]) # "YIGnBu"
 
-pdf("benchmarking/summary/heatmaps.pdf", width = 16, height = 8) 
-grid.arrange(p1, p2, p4, p3, color.bar(colors,1,0,nticks=6), ncol=2, nrow = 3, 
-              layout_matrix = rbind(c(1,2), c(3,4), c(5,5)),
-              widths = c(2.1, 2.6), heights = c(1.5, 1.5, 0.2))
+pdf("benchmarking/summary/heatmaps.pdf") 
+grid.arrange(grid.text("Ground truth GEPs", x = unit(0.75,"npc"), y = unit(0.5,"npc"), gp = gpar(fontsize=12), rot = 90), p1, p2, grid.text("Ground truth GEPs", x = unit(0.75,"npc"), y = unit(0.5,"npc"), gp = gpar(fontsize=12), rot = 90), p4, p3, color.bar(colors,1,0,nticks=6), ncol=3, nrow = 3, 
+            layout_matrix = rbind(c(1,2,3), c(4,5,6), c(7,7,7)),
+            widths = c(0.2,2.1, 2.6), heights = c(1.5, 1.5, 0.2))
 dev.off()
 
 ######## Customized metrics ##########
