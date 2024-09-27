@@ -6,13 +6,14 @@ We provide a bash file for submitting jobs on HPC and all scripts package depend
 We provide Docker images that minimize complexity of configuration, and a step-by-step general instruction of running it on HPC.
 1. On your local host, pull Docker images:
    ```
-   docekr pull ghcr.io/geeleherlab/csi-gep_py:latest
-   docekr pull ghcr.io/geeleherlab/csi-gep_r:latest
+   docker pull ghcr.io/geeleherlab/csi-gep_py:latest
+   docker pull ghcr.io/geeleherlab/csi-gep_r:latest
    ```
 2. On your local host, push to the HPC system of your organization. Below is an example on St. Jude HPC that utilizes singularity:
    ```
    ## remote login
    singularity remote login --user <my_userID> docker://svlprhpcreg01.stjude.org
+   docekr login -u <my_userID> svlprhpcreg01.stjude.org
    ## tag images
    docker tag ghcr.io/geeleherlab/csi-gep_py:latest svlprhpcreg01.stjude.org/hpcf/csi-gep_py:latest
    docker tag ghcr.io/geeleherlab/csi-gep_r:latest svlprhpcreg01.stjude.org/hpcf/csi-gep_r:latest
@@ -23,8 +24,8 @@ We provide Docker images that minimize complexity of configuration, and a step-b
 3. From HPC, pull images and submit jobs:
    ```
    ## pull
-   singularity pull docker://svlprhpcreg01.stjude.org/hpcf/hpcf/csi-gep_py:latest
-   singularity pull docker://svlprhpcreg01.stjude.org/hpcf/hpcf/csi-gep_r:latest
+   singularity pull docker://svlprhpcreg01.stjude.org/hpcf/csi-gep_py:latest
+   singularity pull docker://svlprhpcreg01.stjude.org/hpcf/csi-gep_r:latest
    ```
    An example code of executing the Dockerized CSI-GEP *csigep_submit.bsub* can be found at Docker/.
 
