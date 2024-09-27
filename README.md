@@ -13,7 +13,7 @@ We provide Docker images that minimize complexity of configuration, and a step-b
    ```
    ## remote login
    singularity remote login --user <my_userID> docker://svlprhpcreg01.stjude.org
-   docekr login -u <my_userID> svlprhpcreg01.stjude.org
+   docker login -u <my_userID> svlprhpcreg01.stjude.org
    ## tag images
    docker tag ghcr.io/geeleherlab/csi-gep_py:latest svlprhpcreg01.stjude.org/hpcf/csi-gep_py:latest
    docker tag ghcr.io/geeleherlab/csi-gep_r:latest svlprhpcreg01.stjude.org/hpcf/csi-gep_r:latest
