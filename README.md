@@ -12,7 +12,7 @@ We provide Docker images that minimize complexity of configuration, and a step-b
 2. Below is an example on St. Jude HPC that utilizes singularity. On an HPC node:
    ```
    ## remote login
-   singularity remote login -u <my_userID> docker://svlprhpcreg01.stjude.org
+   singularity registry login -u <my_userID> docker://svlprhpcreg01.stjude.org
    ```
 3. On your local host:
    ```
