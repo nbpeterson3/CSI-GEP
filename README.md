@@ -9,11 +9,14 @@ We provide Docker images that minimize complexity of configuration, and a step-b
    docker pull ghcr.io/geeleherlab/csi-gep_py:latest
    docker pull ghcr.io/geeleherlab/csi-gep_r:latest
    ```
-2. On your local host, push to the HPC system of your organization. Below is an example on St. Jude HPC that utilizes singularity:
+   Log in to the repository:
+   ```
+   docker login -u <my_userID> svlprhpcreg01.stjude.org
+   ```
+3. On your local host, push to the HPC system of your organization. Below is an example on St. Jude HPC that utilizes singularity:
    ```
    ## remote login
-   singularity remote login --user <my_userID> docker://svlprhpcreg01.stjude.org
-   docker login -u <my_userID> svlprhpcreg01.stjude.org
+   singularity remote login -u <my_userID> docker://svlprhpcreg01.stjude.org
    ## tag images
    docker tag ghcr.io/geeleherlab/csi-gep_py:latest svlprhpcreg01.stjude.org/hpcf/csi-gep_py:latest
    docker tag ghcr.io/geeleherlab/csi-gep_r:latest svlprhpcreg01.stjude.org/hpcf/csi-gep_r:latest
@@ -21,7 +24,7 @@ We provide Docker images that minimize complexity of configuration, and a step-b
    docker image push svlprhpcreg01.stjude.org/hpcf/csi-gep_py:latest
    docker image push svlprhpcreg01.stjude.org/hpcf/csi-gep_r:latest
    ```
-3. From HPC, pull images and submit jobs:
+4. From HPC, pull images and submit jobs:
    ```
    ## pull
    singularity pull docker://svlprhpcreg01.stjude.org/hpcf/csi-gep_py:latest
