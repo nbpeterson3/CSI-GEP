@@ -9,14 +9,15 @@ We provide Docker images that minimize complexity of configuration, and a step-b
    docker pull ghcr.io/geeleherlab/csi-gep_py:latest
    docker pull ghcr.io/geeleherlab/csi-gep_r:latest
    ```
-   Log in to the repository:
-   ```
-   docker login -u <my_userID> svlprhpcreg01.stjude.org
-   ```
-3. On your local host, push to the HPC system of your organization. Below is an example on St. Jude HPC that utilizes singularity:
+2. Below is an example on St. Jude HPC that utilizes singularity. On an HPC node:
    ```
    ## remote login
    singularity remote login -u <my_userID> docker://svlprhpcreg01.stjude.org
+   ```
+3. On your local host:
+   ```
+   ## docker login
+   docker login -u <my_userID> svlprhpcreg01.stjude.org
    ## tag images
    docker tag ghcr.io/geeleherlab/csi-gep_py:latest svlprhpcreg01.stjude.org/hpcf/csi-gep_py:latest
    docker tag ghcr.io/geeleherlab/csi-gep_r:latest svlprhpcreg01.stjude.org/hpcf/csi-gep_r:latest
@@ -30,7 +31,7 @@ We provide Docker images that minimize complexity of configuration, and a step-b
    singularity pull docker://svlprhpcreg01.stjude.org/hpcf/csi-gep_py:latest
    singularity pull docker://svlprhpcreg01.stjude.org/hpcf/csi-gep_r:latest
    ```
-   An example code of executing the Dockerized CSI-GEP *csigep_submit.bsub* can be found at Docker/.
+An example code of executing the Dockerized CSI-GEP *csigep_submit.bsub* can be found at Docker/.
 
 
 ## Benchmarking 
