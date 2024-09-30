@@ -13,6 +13,8 @@ We provide Docker images that minimize complexity of configuration, and a step-b
    ```
    ## remote login
    singularity registry login -u <my_userID> docker://svlprhpcreg01.stjude.org
+   ## load modul
+   module load singularity/4.1.1
    ```
 3. On your local host:
    ```
