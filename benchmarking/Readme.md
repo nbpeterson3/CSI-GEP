@@ -1,6 +1,6 @@
 # Walkthrough with example data 
 **Dependencies of each method is provided in the seperate requirements.txt files**.
-## Prepare count data with only highly variable genes
+## Prepare count data with only highly variable genes (make sure the count matrix is a sparse matrix)
    ```
    python benchmarking/subset_hvg.py --counts "simulated_data/counts.npz" --num_highvar_genes 2000
    ```
