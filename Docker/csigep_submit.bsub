@@ -15,7 +15,7 @@ mkdir -p $log_dir
 dataset_name="Splatter_250k"
 K_list=$(<$PWD"/CSI-GEP/K.txt")
 data_directory=$PWD"/simulated_data/counts.h5ad"
-rescue=FALSE # set to TRUE if you want to rescue more GEPs from unused columns
+rescue=0 # set to 1 if you want to rescue more GEPs from unused columns with the next up Jaccard length
 
 CMD1="singularity exec docker://svlprhpcreg01.stjude.org/hpcf/csi-gep_py:latest python /app/prepare.py  --numgenes 2000 -c $data_directory --output-dir $output_dir" 
 bsub -K -n 1 -e $log_dir/docker_err.txt -o $log_dir/docker_out.txt -J prepare -q standard -R "rusage[mem=100GB]" $CMD1
