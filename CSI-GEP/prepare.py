@@ -7,6 +7,7 @@ import numpy as np
 import scanpy as sc
 from scipy import io, sparse
 from random import choices
+import random
 
 def counts_split(raw_counts_path, output_path, numgenes=2000):
     """
@@ -21,6 +22,7 @@ def counts_split(raw_counts_path, output_path, numgenes=2000):
     check_dir_exists(pjoin(output_path, 'cNMF_split0/cnmf_tmp'))
     check_dir_exists(pjoin(output_path, 'cNMF_split1/cnmf_tmp'))
 
+    random.seed(1234)
     data = sc.read_h5ad(raw_counts_path)
     splits = np.array(choices(["split0", "split1"], k=data.n_obs))
     adata_split0 = data[splits=="split0"]
