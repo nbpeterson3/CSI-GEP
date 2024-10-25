@@ -56,7 +56,7 @@ output.dir <- args[3]
 ranks = scan(text=args[4], sep = ",")
 print(ranks)
 
-check_for_rescue = args[5]
+check_for_rescue = as.numeric(args[5])
 
 jaccard.val <- c(seq(10,100,10))
     
@@ -168,7 +168,7 @@ if(rescue){
         split0_rescue = data.frame(split0[,row_ind_keep])
         split1_rescue = data.frame(split1[,col_ind_keep])
         #Compute jaccard index for fixed JL 
-        new_jval = min(jaccard.val[jaccard.val>jval])
+        new_jval = min(as.numeric(jaccard.val)[as.numeric(jaccard.val)>jval])
 
         print(paste0("Jaccard Length: ", new_jval))
         splitstatlist <- list()
